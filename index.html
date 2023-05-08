@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Tic-Tac-Toe.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body class="homePage">
+<h1 class="playerUp">Anthony's Tic Tac Toe game</h1>
+<div id="messageBox">
+   <form onsubmit="return false">
+   <label class="entryField" id="p1Button" for:"p1name">Player 1:</label><br> 
+   <input oninput = "userName1(this)" class = "inputBox" id="player1Box" type="text" placeholder="Your name here!"></input>
+   <button type="submit" class="submit" id="p1submit">Submit</button>
+   </form>
+<p id="infoText">To start the game, click any box!</p>
+<form onsubmit="return false">
+   <label class="entryField" id="p2Button" for:"p1name">Player 2:</label><br>
+   <input oninput = "userName2(this)" class="inputBox" id="player2Box" type="text" placeholder="Your name here!"></input> 
+   <button type="submit" class="submit" id="p1submit">Submit</button>
+   </form>
+</div>
+<div id="gameDisplayBox">
+<p id="player1DisplayBox" class="nameDisplay"></p>
+<p id="turnCounter"></p>
+<p id="player2DisplayBox" class="nameDisplay"></p>
+
+</div>
+  <table align="center" cellpadding="1" cellspacing="0"  id = "gameBoard">
+
+     <tr>
+       <td id = "box0" class ="entryBox" onclick="fill(this)"></td>
+       <td id = "box1" class="entryBox vertical" onclick="fill(this)"></td>
+       <td id = "box2" class="entryBox" onclick="fill(this)"></td>    
+     </tr>    
+     <tr>
+        <td id = "box3" class="entryBox horizontal" onclick="fill(this)"></td>
+        <td id = "box4" class="entryBox vertical horizontal" onclick="fill(this)"></td>
+        <td id = "box5" class="entryBox horizontal" onclick="fill(this)"></td>
+     </tr>
+     <tr>
+        <td id = "box6" class ="entryBox" onclick="fill(this)"></td>
+        <td id = "box7" class="entryBox vertical" onclick="fill(this)"></td>
+        <td id = "box8" class ="entryBox" onclick="fill(this)"></td>
+     </tr>
+    </table>
+<!-- </div> -->
+    <div id = "restartButton" class="restart">
+      <button id="restart" class="submit" type="submit">Start Over</button>
+</div>
+<script src = "Tic-Tac-Toe.js"></script>
+</body>
+</html>

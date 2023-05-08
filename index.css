@@ -1,0 +1,142 @@
+h1 {
+  color: crimson;
+  text-align: center;  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 24pt;
+}
+h1:hover {
+  color: orange;
+ }
+
+.homePage {
+  background-image: linear-gradient(to bottom right, #eca26e, #6f1612);
+} 
+
+#messageBox {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 6%; 
+  color: darkred;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#gameDisplayBox {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+ }
+#player1DisplayBox {
+  background-color: orange;
+  height: 27px;
+  margin-left: 8pt;
+  text-shadow:1px 1.5px;
+  font-size: 22pt;
+  padding: 4pt 4pt 4pt 4pt;
+  color: crimson;
+  box-shadow: 4px 4px 3px;
+  width: 25%;
+  text-align: center;
+}
+#player2DisplayBox {
+  height: 27px;
+  text-shadow:1px 1.5px;
+  font-size: 22pt;
+  padding: 4pt 4pt 4pt 4pt;
+  width: 25%;
+  float: right;
+  background-color: crimson;
+  color: orange;
+  margin-right: 8pt;
+  box-shadow: 4px 4px 3px;
+  text-align: center;
+}
+
+.playerDisplay {
+  height: 20px;
+  width: 90px;
+}
+
+.inputBox {
+  text-align: center;
+  margin-left: 6pt;
+  margin-right: 6pt;
+  width: 80%;
+  color: gray;
+  background-color: silver;
+}
+.submit {
+  height: 20px;
+  width: 68px;
+  background-color: silver;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size:10pt;
+  color: darkred;
+}
+p {
+  font-size: 14pt;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  text-align: center; 
+}
+
+
+table {
+    margin: auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+
+}
+
+.entryBox {
+    font-size: 60px;
+    text-align: center;
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.entryBox:hover .innerText {
+  display: block;
+
+}
+
+.vertical {
+    border-left:  16px solid darkred;
+    border-right: 16px solid darkred;
+    border-collapse: inherit;
+}
+
+.horizontal {
+    border-top: 16px solid darkred;
+    border-bottom: 16px solid darkred;
+    border-collapse: inherit;
+}
+
+
+#restartButton {
+ display: flex;
+ justify-content: center;
+ margin: 40px 20px 20px 20px;  
+}
+#restart {
+  height: 55px;
+  width: 140px;
+  border: 2px solid crimson;
+  font-family: fantasy;
+  font-size: 22px;
+  color:orange;
+  background-image: linear-gradient(to bottom right, #eca26e, #6f1612)
+}
+#restart:hover {
+  cursor: pointer;
+  color: crimson;
+  border-color: orange;
+}
+#entryBox img {
+    width: 25%
+} 
+/* background-image: linear-gradient(to bottom right, rgb(235, 104, 10), rgb(128, 227, 57)); */
