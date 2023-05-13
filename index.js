@@ -1,3 +1,5 @@
+// REVIEW: Get into the habit of setting selected html elements to local vars instead of globals.
+// ...The globals won't update if you add / remove elements to the page.
 const p1Str = document.getElementById("player1Box")
 const p2Str = document.getElementById("player2Box")
 const p1Submit = document.getElementById("p1Submit")
@@ -17,6 +19,9 @@ let p2Entry = document.getElementById("player2DisplayBox")
 //     let us2Input = p2Entry.value;
 //     console.log(us2Input)
 // }
+
+// REVIEW: These are working but could be rewritten to take the player number as an argument and interpolate it into the ID selector 
+// ... getElementById(`player${playerNumber}DisplayBox`)
 function userName1(name){
     document.getElementById("player1DisplayBox").innerText = name.value;
 }
@@ -72,6 +77,13 @@ let playerXTurn = true;
 
 
 
+
+// REVIEW: Remember the DRY (don't repeat yourself) principle? This could berewritten with a helper function like the example below.
+// function checkCondition(firstBox, secondBox, thirdBox) {
+//   return document.getElementById(firstBox).innerHTML != "" && document.getElementById(secondBox).innerHTML != "" && document.getElementById(thirdBox).innerHTML != "" 
+//   && document.getElementById(firstBox).innerHTML == document.getElementById(secondBox).innerHTML 
+//   && document.getElementById(secondBox).innerHTML == document.getElementById(thirdBox).innerHTML 
+// }
 
 // function to test user entries against the winning combinations
 function checkWinner(){
